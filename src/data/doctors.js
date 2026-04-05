@@ -31,7 +31,7 @@ const doctors = [
     name: 'Dr. Priya Mehta',
     specialization: 'Physiotherapist',
     experience: '8 years',
-    profileImage: null, // Missing image — will use default avatar
+    profileImage: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=300&h=300&fit=crop&crop=face',
     description:
       'Dr. Priya Mehta is a skilled physiotherapist who helps patients recover from injuries, surgeries, and chronic pain conditions. She combines manual therapy with exercise-based rehabilitation to ensure the fastest and most sustainable recovery outcomes.',
     rating: 4.7,
@@ -57,7 +57,7 @@ const doctors = [
     name: 'Dr. Sneha Kulkarni',
     specialization: 'Dermatologist',
     experience: '12 years',
-    profileImage: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=300&h=300&fit=crop&crop=face',
+    profileImage: null,
     description:
       'Dr. Sneha Kulkarni is a board-certified dermatologist with expertise in treating skin, hair, and nail disorders. She offers advanced treatments including laser therapy, chemical peels, and anti-aging procedures with a holistic approach to skin health.',
     rating: 4.8,
