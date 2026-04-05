@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# MedicApp 🏥
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MedicApp is a modern, high-performance **React Native** mobile application built with **Expo**. It serves as a comprehensive scheduling platform where users can browse healthcare providers, view availability, and manage medical appointments with ease.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+### 1. User Authentication
+- **Secure Registration:** Create an account with name, email, and password.
+- **Smart Login:** Session persistence allows users to stay logged in across app restarts.
+- **Local Persistence:** Uses `AsyncStorage` for secure local data management.
 
+### 2. Doctor Discovery
+- **Provider Listings:** A clean, searchable list of medical professionals.
+- **Specialization Filters:** Categorize doctors by their field (Cardiology, Pediatrics, etc.).
+- **Detailed Profiles:** View doctor ratings, experience, and availability at a glance.
+
+### 3. Appointment Scheduling
+- **Real-time Availability:** Choose dates and time slots that aren't already booked.
+- **Instant Booking:** Seamlessly reserve a slot with immediate confirmation.
+- **Slot Conflict Prevention:** Backend logic ensures that once a slot is booked, it's removed from availability for other users.
+
+### 4. Appointment Management
+- **Dashboard:** View all upcoming and past appointments in one place.
+- **Cancellation:** Flexibility to cancel appointments with instant status updates.
+
+---
+
+## 🛠️ Technical Stack
+
+- **Framework:** [React Native](https://reactnative.dev/)
+- **Development Tooling:** [Expo SDK 54](https://expo.dev/)
+- **Navigation:** [Expo Router](https://docs.expo.dev/router/introduction/) (File-based routing)
+- **Styling:** Dynamic theme support with curated HSL color palettes.
+- **Storage:** `@react-native-async-storage/async-storage` for local data persistence.
+- **Icons:** `@expo/vector-icons` (Ionicons)
+
+---
+
+## 📂 Project Structure
+
+```text
+├── app/                # Expo Router Layouts & Main Routes
+├── src/
+│   ├── components/     # Reusable UI components (Buttons, Cards, etc.)
+│   ├── screens/        # Full-page screens (Home, Booking, My Appointments)
+│   ├── data/           # Mock data and provider information
+│   ├── utils/          # Storage logic, themes, and helper functions
+│   └── hooks/          # Custom React hooks
+├── assets/             # Images, fonts, and static resources
+└── app.json            # Expo configuration
+```
+
+---
+
+## 🏃‍♂️ Getting Started
+
+### Prerequisites
+- Node.js (v18 or newer)
+- npm or yarn
+- Expo Go app on your mobile device (to test on physical hardware)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/akshat0416/MedicApp.git
+   cd MedicApp
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your device:
+   - Scan the QR code with the **Expo Go** app (Android) or **Camera** app (iOS).
+   - Alternatively, press `a` for Android Emulator or `i` for iOS Simulator.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📝 Problem Statement Compliance
+This project satisfies all requirements for the **"PART II: Development of a Scheduling Platform"** task:
+- ✅ Developed with React Native.
+- ✅ Robust User Registration/Auth.
+- ✅ Dynamic Service Provider Listings.
+- ✅ Full Appointment Scheduling & Management.
+- ✅ Clean, well-structured, and documented code.
 
-## Get a fresh project
+---
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 👋 Contact
+Developed by **Akshat**
