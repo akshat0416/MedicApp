@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "appointment-app",
-    "slug": "appointment-app",
+    "name": "MedicApp",
+    "slug": "medicapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
